@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sesión 3</title>
+    <style>
+        th,td{
+            border: 1px solid black;
+        }
+        table{
+            padding: 1em;
+            border: 1px dashed blue;
+        }
+        tr{
+            padding: 0.3em;
+            border: dashed green;
+        }
+    </style>
 </head>
 <body>
     <h1>Encabezado de h1</h1>
@@ -18,6 +31,38 @@
         <span style="color: red">Este span, que esta dentro del parrafo, es un elemento en linea o de linea. </span> El parrafo termina aquí.
     </p>
 
+    <table>
+        <tr>
+            <thead>
+                <tr>
+                    <th>Nombre:</th>
+                    <th>Apellidos:</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Caotico</td>
+                    <td>Perdido</td>
+                </tr>
+                <tr>
+                    <td>Fuga</td>
+                    <td>De Frutos</td>
+                </tr>
+                <tr>
+                    <td>Billy</td>
+                    <td>El Niño</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td><i>Producción: </i></td>
+                    <td><i>Amazon Prime</i></td>
+                </tr>
+            </tfoot>
+        </tr>
+    </table>
 
 
 </body>
