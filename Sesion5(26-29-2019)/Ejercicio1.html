@@ -13,13 +13,57 @@
         <fieldset>
             <legend>Formulario completo</legend>
             <label for="campotexto1id">Nombre: </label>
-            <input type="text" id="campotexto1" placeholder="Introduce el nombre"><br>
+            <input type="text" name="campotexto1" id="campotexto1id" placeholder="Introduce el nombre" required ><br>
+
             <label for="areatexto1id">Comentarios: </label><br>
-            <textarea name="areatexto1" id="areatexto11id" cols="60" rows="15" placeholder="Comentarios aquí"></textarea><br>
+            <textarea name="areatexto1" id="areatexto1id" cols="60" rows="15" placeholder="Comentarios aquí"></textarea><br>
+
             <label for="campobusquieda1id">Termino a buscar: </label>
-            <input type="search" id="campobusquieda1id" name="campobusquieda1" placeholder="Intrduce el término de búsqueda"><br>
+            <input type="search" id="campobusquieda1id" name="campobusquieda1" placeholder="Intrduce el término de búsqueda" required><br>
+
+            <label for="campocontraseña1id">Contraseña: </label>
+            <input type="password" id="campocontraseña1id" placeholder="Intrduce contraseña" required><br>
+
+            <label for="fichero1id">Escoja el fichero: </label>
+            <input type="file" id="fichero1id" name="fichero1" required><br>
+
+            <label for="camponumero1id">Introduce la fecha de nacimiento: </label>
+            <input type="date" name="camponumero1" id="camponumero1id" required><br>
+
+            <label for="campourl1id">Campo de tipo url: </label>
+            <input type="url" name="campourl1" id="campourl1id" required><br>
+
+            <label for="campoemail1id">Ponga aquí su email: </label>
+            <input type="email" name="campoemail1" id="campoemail1id" required><br>
+
+            <label for="campotiempo1id">Campo de tipo tiempo: </label>
+            <input type="time" name="campotiempo1" id="campotiempo1id" required><br>
+            
+            <label for="camponumero1id">Campo de tipo numero: </label>
+            <input type="number" name="camponumreo1" id="camponumero1id" required><br>
+
+            <label for="campocolor1id">Campo de tipo color: </label>
+            <input type="color" name="campocolor1" id="campocolor1id" required><br>
+
+            <label for="camporango1id">Campo de tipo rango: </label>
+            <input type="range" name="camporango1" id="camporango1id" title="Selecciona un valor de rango"
+            min="0" max="10" value="5" step="1" onchange="mostrarValorRango(this.value)" required> <input type="text" id="camporangomostrar"> <br>
+            
+            <input type="text" name="dni1" id="dni1id" placeholder="Intrduce tu DNI" title="Intrduce tu DNI: 8 numeros y una letra de la A a la Z" pattern="[0-9]{8}[A-Z]{1}" autofocus required>
+
+            <input type="submit" value="Validar los datos del formulario y enviar."><br>
 
         </fieldset>
     </form>
+
+
+
+
+    
+    <script>
+        function mostrarValorRango(valor){
+            document.getElementById("camporangomostrar").value=valor;
+        }
+    </script>
 </body>
 </html>
