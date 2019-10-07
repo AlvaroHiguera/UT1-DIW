@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicion 1</title>
+</head>
+<body>
+    <form name="Formulario1" id="Formulario1id" action="">
+        <fieldset>
+            <legend>
+                Formulario con campo que visualiza pattern avanzado
+            </legend>
+            <label for="campoDNI">D.N.I</label>
+            <input type="text" required maxlength="9" id="campoDNI" size="20" pattern="[0-9]{8}[a-zA-Z]{1}" placeholder="DNI: 8 números y una letra" title="El DNI debe contener 8 digitos numericos y una letra en mayoscula o en minuscula.">
+        </fieldset>
+    </form>
+</body>
+</html>
