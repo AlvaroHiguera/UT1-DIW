@@ -10,8 +10,28 @@
 
     <h1>Resto de elementos HTML5</h1>
     <h2>Elemento div: es un elemento de bloque</h2>
-    
+
     <div>Esto es una capa se utiliza para estructurar el contenido de la página web</div>
-    
+    <h2>Elemento audio</h2>
+    <audio id="audio1" controls>
+        <source src="Musica/Pignoise - Quiero (Videoclip).mp3" type="audio/mpeg">
+        <source src="Musica/Pignoise - Quiero (Videoclip).wav" type="audio/wav">
+        <source src="Musica/Pignoise - Quiero (Videoclip).ogg" type="audio/ogg">
+            tu navegador no soporta audio html5
+    </audio>
+    <h2>Elemento de tipo progress</h2>
+    <progress max="100" value="80%"></progress>
+    <h2>Elemento de tipo canvas</h2>
+    <canvas id="canvas1" width="300" height="150" style="border: 1px solid black;">
+        
+    </canvas>
+
+
+    <script>
+        var canvas=document.getElementById("canvas1");
+        var contexto=canvas.getContext("2d");
+        contexto.fillStyle="#FF0000";
+        contexto.fillRect(0,0,150,75);
+    </script>
 </body>
 </html>
